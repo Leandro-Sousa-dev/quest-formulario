@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap');
+
+html{
+    font-family: 'Roboto', sans-serif;
+    font-size: 62.5%;
+}
+
+body{
+    background: url('../images/bg-repeat.jpg') repeat-x center;
+    background-size: contain;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.mensagem-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 10px 50px;
+    gap: 60px;
+}
+
+.mensagem-container .info-formulario{
+    color: var(--cor-fonte);
+    width: 300px;
+    user-select: none;
+}
+
+.mensagem-container .info-formulario h1{
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.mensagem-container .info-formulario h2{
+    font-weight: 300;
+    padding-top: 12px;
+}
+
+.mensagem-container .formulario{
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    max-height: 378px;
+    max-width: 340px;
+    padding: 20px;
+    margin: 0 20px;
+}
+
+.formulario .campo{
+    border: 1px solid #000000;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding: 8px 10px;
+}
+
+.formulario .campo::placeholder{
+    font-weight: 700;
+    color: #A8A8A8;
+}
+
+.vazio{
+    border: 1px solid #F52E2E;
+}
+
+label{
+    display: none;
+    font-size: 0.8rem;
+    color: #F52E2E;
+}
+
+.formulario .campo.vazio + label{
+    display: inline-block;
+}
+
+.formulario .campo.preenchido{
+    border: 1px solid #00C22B;
+}
+
+#telefone::-webkit-inner-spin-button { 
+    -webkit-appearance: none; 
+}
+
+#mensagem{
+    resize: none;
+    height: 100px;
+    width: 300px;
+}
+
+.formulario h2{
+    margin-top: 7px;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.formulario .btn-enviar{
+    background-color: #3CCC87;
+    color: var(--cor-fonte);
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 12px;
+    margin-top: 20px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    transition: 0.3s ease-in-out;
+}
+
+.btn-enviar:hover{
+    background-color: #3C9F87;
+}
