@@ -8,6 +8,7 @@
 
     <link rel="stylesheet" href="./src/css/reset.css">
     <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/responsive.css">
 
 </head>
 <body>
@@ -17,24 +18,18 @@
             <h2>caso tenha ficado com qualquer dúvida basta nos mandar uma mensagem e entraremos em contato em menos de 24h.</h2>
         </div>
 
-        <form class="formulario" method="POST">
+        <form class="formulario">
             <input class="campo" type="text" name="nome-completo" id="nome" placeholder="Nome completo *">
-            <label for="nome">campo obrigatório</label>
-            
-            <br>
+            <label class="label nome" for="nome">campo obrigatório</label>
             
             <input class="campo" type="text" name="email" id="email" placeholder="Email *">
-            <label for="email">campo obrigatório</label>
-            
-            <br>
+            <label class="label email" for="email">campo obrigatório</label>
 
-            <input class="campo" type="number" name="telefone" id="telefone" placeholder="Telefone *">
-            <label for="telefone">campo obrigatório</label>
-            
-            <br>
+            <input class="campo" type="tel" name="telefone" id="telefone" placeholder="Telefone *">
+            <label class="label telefone" for="telefone">campo obrigatório</label>
             
             <textarea class="campo" type="text" name="mensagem" id="mensagem" placeholder="Mensagem *"></textarea>
-            <label for="mensagem">campo obrigatório</label>
+            <label class="label mensagem" for="mensagem">campo obrigatório</label>
 
             <h2>*campos obrigatórios</h2>
 

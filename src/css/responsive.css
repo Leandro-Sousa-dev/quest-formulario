@@ -1,0 +1,12 @@
+@media(max-width:992px){
+    .mensagem-container{
+        flex-direction: column;
+    }
+
+}
+
+@media(max-width:380px){
+    .mensagem-container .formulario{
+        min-width: 290px;
+    }
+}

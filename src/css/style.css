@@ -17,8 +17,6 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-    margin: 10px 50px;
     gap: 60px;
 }
 
@@ -42,8 +40,7 @@ body{
     background-color: #ffffff;
     display: flex;
     flex-direction: column;
-    max-height: 378px;
-    max-width: 340px;
+    min-width: 340px;
     padding: 20px;
     margin: 0 20px;
 }
@@ -55,6 +52,11 @@ body{
     font-size: 1.5rem;
     font-weight: 400;
     padding: 8px 10px;
+    margin-top: 13px;
+}
+
+.campo:first-child{
+    margin-top: 0;
 }
 
 .formulario .campo::placeholder{
@@ -66,13 +68,13 @@ body{
     border: 1px solid #F52E2E;
 }
 
-label{
+.label{
     display: none;
     font-size: 0.8rem;
     color: #F52E2E;
 }
 
-.formulario .campo.vazio + label{
+.label.mostrar{
     display: inline-block;
 }
 
@@ -86,8 +88,8 @@ label{
 
 #mensagem{
     resize: none;
-    height: 100px;
-    width: 300px;
+    min-height: 100px;
+    width: 100%;
 }
 
 .formulario h2{
