@@ -31,4 +31,3 @@ btnEnviar.addEventListener('click', (event) => {
 
     });
 })
-// item.id
